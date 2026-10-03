@@ -1,0 +1,477 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #faf7f2;
+
+    color: #222;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+
+    background:
+        linear-gradient(
+            135deg,
+            #8e1b1b,
+            #c83b3b
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 32px 15px 28px;
+
+}
+
+
+.logo-circle {
+
+    width: 65px;
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: auto;
+
+    background: #f7c948;
+
+    border-radius: 50%;
+
+    font-size: 32px;
+
+}
+
+
+.hero h1 {
+
+    margin-top: 12px;
+
+    font-family: Georgia, serif;
+
+    font-size: 32px;
+
+}
+
+
+.hero p {
+
+    margin-top: 4px;
+
+    opacity: 0.9;
+
+}
+
+
+/* =========================================
+   STICKY AREA
+========================================= */
+
+.sticky-area {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    background: #faf7f2;
+
+    padding: 12px 12px 8px;
+
+    box-shadow:
+        0 2px 10px rgba(0,0,0,0.08);
+
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.search-box {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 30px;
+
+    padding: 11px 16px;
+
+}
+
+
+.search-box span {
+
+    font-size: 18px;
+
+}
+
+
+.search-box input {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 15px;
+
+    background: transparent;
+
+}
+
+
+/* =========================================
+   CATEGORY BUTTONS
+========================================= */
+
+.categories {
+
+    max-width: 1000px;
+
+    margin: 10px auto 0;
+
+    display: flex;
+
+    gap: 8px;
+
+    overflow-x: auto;
+
+    padding-bottom: 5px;
+
+}
+
+
+.categories::-webkit-scrollbar {
+
+    height: 3px;
+
+}
+
+
+.category-btn {
+
+    border: 1px solid #c83b3b;
+
+    background: white;
+
+    color: #8e1b1b;
+
+    border-radius: 20px;
+
+    padding: 7px 15px;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+}
+
+
+.category-btn.active {
+
+    background: #8e1b1b;
+
+    color: white;
+
+}
+
+
+/* =========================================
+   MENU CONTAINER
+========================================= */
+
+#menuContainer {
+
+    max-width: 750px;
+
+    margin: auto;
+
+    padding: 20px 14px 40px;
+
+}
+
+
+/* =========================================
+   MENU SECTION
+========================================= */
+
+.menu-section {
+
+    margin-bottom: 24px;
+
+}
+
+
+.section-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 10px;
+
+    color: #8e1b1b;
+
+    font-family: Georgia, serif;
+
+    font-size: 22px;
+
+}
+
+
+.section-title::after {
+
+    content: "";
+
+    height: 1px;
+
+    background: #ddd;
+
+    flex: 1;
+
+}
+
+
+/* =========================================
+   MENU CARD
+========================================= */
+
+.menu-card {
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 14px;
+
+    margin-bottom: 8px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    border: 1px solid #eee;
+
+}
+
+
+.item-info {
+
+    flex: 1;
+
+}
+
+
+.item-name {
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+}
+
+
+.item-description {
+
+    color: #777;
+
+    font-size: 12px;
+
+    margin-top: 3px;
+
+}
+
+
+.item-price {
+
+    color: #8e1b1b;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    font-size: 15px;
+
+}
+
+
+/* =========================================
+   HALF / FULL PRICE
+========================================= */
+
+.price-container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 2px;
+
+}
+
+
+.price-label {
+
+    font-size: 10px;
+
+    color: #888;
+
+}
+
+
+.price {
+
+    font-weight: bold;
+
+    color: #8e1b1b;
+
+}
+
+
+/* =========================================
+   NO RESULT
+========================================= */
+
+.no-result {
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    color: #777;
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    background: #242424;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 15px;
+
+}
+
+
+footer h2 {
+
+    font-family: Georgia, serif;
+
+    margin-bottom: 15px;
+
+}
+
+
+footer p {
+
+    color: #ccc;
+
+    font-size: 13px;
+
+    margin: 5px;
+
+}
+
+
+footer .copyright {
+
+    color: white;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+    .hero h1 {
+
+        font-size: 28px;
+
+    }
+
+
+    .menu-card {
+
+        padding: 13px;
+
+    }
+
+
+    .item-name {
+
+        font-size: 15px;
+
+    }
+
+
+    .item-price {
+
+        font-size: 14px;
+
+    }
+
+}
